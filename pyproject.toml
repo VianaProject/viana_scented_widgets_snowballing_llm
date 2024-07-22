@@ -11,6 +11,7 @@ numpy = "^2.0.1"
 pandas = "^2.2.2"
 openai = "^1.36.1"
 requests = "^2.32.3"
+vertexai = "^1.49.0"
 
 
 [build-system]
