@@ -28,6 +28,8 @@ logger.addHandler(ch)
 
 # set up your project with Gemini and VertexAI.
 # documentation available here: https://cloud.google.com/vertex-ai/generative-ai/docs/start/quickstarts/quickstart-multimodal
+# there is a need to install google's console and config your project locally with your credentials for this code to work.
+# follow the above documentation's guidelines.
 vertexai.init(project="use your project id", location="use your location but bear in mind, API speed and limits are location dependent")
 model = GenerativeModel("gemini-1.0-pro-001")
 # I have run ChatGPT before GEMINI so here it assumes the same.
