@@ -83,7 +83,8 @@ def concatenate_with_corpus(answers: [AnswerChatGPT]) -> pd.DataFrame:
 def main():
     answers = iterate_over_corpus(snowballing_corpus)
     concatenated_df = concatenate_with_corpus(answers)
-    concatenated_df.to_csv('records_complete_snowballing_chatgpt.csv', index=False)
+    # our results file is already located at that location
+    concatenated_df.to_csv('data/records_complete_snowballing_chatgpt.csv', index=False)
 
 
 if __name__ == '__main__':
